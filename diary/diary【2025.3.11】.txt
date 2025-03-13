@@ -1,0 +1,17 @@
+2025.3.11 天氣晴
+
+今天繼續了《爲你自己學git》的課程，不過程式有建議我不要使用git Bash，因爲太hardcode，所以我有稍微把重心放在fork的操作上，不過我覺得如果可以知道具體的原理可能還是有幫助的，只是有不懂的部分無法請教程式了。
+
+關於reset的心得：
+
+1和2既代表一個文件名字，也代表文件内容
+
+1 reset to 2 commit changes   → 1         |commit都在
+1 reset to 2 discard changes → 1，2   |2後的commit不在
+2 reset to 1 discard changes → 1         |1後的commit不在
+2 reset to 1 commit changes   → 1，2   |1後的commit不在（2 reset to 1的commit在）
+
+我的理解是，1 reset to 2 代表“2要變成1，可以嗎？” 如果可以，那就commit，變成（1），如果不行，那就discard，還是（1，2）
+           同理：2 reset to 1 代表“1要變成2，可以嗎？” 如果可以，那就commit，變成（1，2），如果不行，那就disard，還是（1）
+
+只是這樣操作會丟失fork那邊的commit信息，如果需要變成2，爲什麽不點兩下過去就好了？
