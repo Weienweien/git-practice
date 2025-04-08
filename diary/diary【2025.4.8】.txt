@@ -1,0 +1,21 @@
+2025.4.8 天氣晴
+
+今天得到了一串神秘代碼，用於同時使用多個賬號，用來測試幫會戰之類的活動還蠻方便的
+
+#######
+set dir=Game_copy2
+if not exist %dir% ( md %dir%)
+mklink/J Game_copy2\Assets C:\XQJ\XQJ_UnityProject\Assets
+mklink/J Game_copy2\ProjectSettings C:\XQJ\XQJ_UnityProject\ProjectSettings
+mklink/J Game_copy2\Library C:\XQJ\XQJ_UnityProject\Library
+mklink/J Game_copy2\Packages C:\XQJ\XQJ_UnityProject\Packages
+mklink/J Game_copy2\Luajit64 C:\XQJ\XQJ_UnityProject\Luajit64
+mklink/J Game_copy2\Luajit C:\XQJ\XQJ_UnityProject\Luajit
+
+Game_copy2 是 資料夾名字
+C:\XQJ\XQJ_UnityProject 是 自己有Assets，CommitTemplate，DataTransducerTemp這些資料夾的路徑
+#######
+
+要去cmd粘帖上就可以用了，一開始是程式研究了什麽新功能，還錄了影片把新功能都展示出來了，還是叫我去測試，其實蠻奇怪的，因爲他影片都錄出來了有什麽好測的，不過順勢獲得了神秘代碼，而且主體功能是沒問題，邊緣功能有點半重要半不重要的問題，反正就讓程式去研究吧
+
+
